@@ -1,0 +1,26 @@
+# How to start
+# 1) In a terminal: 
+#    cd /Users/asd/Desktop/Github Projects/Web_Learning/Asp .Net Rest Api Learning/WebApi
+#    dotnet run
+# 2) Note the listening URL printed (example: http://localhost:5085)
+# 3) Use these requests to test the API.
+
+@WebApi_HostAddress = http://localhost:5085
+
+### Root (will redirect if Program.cs is configured to redirect)
+GET {{WebApi_HostAddress}}/
+Accept: application/json
+
+###
+
+### Course list (from WebApi.Controllers.CourseController)
+GET {{WebApi_HostAddress}}/api/course
+Accept: application/json
+
+###
+
+### Weather forecast (from Program.cs)
+GET {{WebApi_HostAddress}}/weatherforecast
+Accept: application/json
+
+###
